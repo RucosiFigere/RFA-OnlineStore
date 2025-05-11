@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rucosi Figere</title>
-    <!-- Link to Google Fonts for EB Garamond -->
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
 </head>
@@ -22,13 +20,14 @@
         <button onclick="checkPassword()">Submit</button>
         
         <p id="error-message" style="color: red; display: none;">Wrong answer. Try again.</p>
+        <p id="hint-message" style="color: orange; display: none;"></p> <!-- Optional hint after failed attempts -->
     </div>
 
-    <!-- Hidden Content for After Password Is Correct -->
-    <div id="hidden-content" class="hidden-content">
+    <!-- Hidden Gallery Page for After Password Is Correct -->
+    <div id="gallery-page" style="display: none;">
         <h2>Exclusive Collection</h2>
         <p>Welcome to Rucosi Figere Atelier's private gallery of fashion and art.</p>
-        <!-- Display the product catalog or other details here -->
+        <!-- Your gallery content goes here -->
     </div>
 
 </body>
