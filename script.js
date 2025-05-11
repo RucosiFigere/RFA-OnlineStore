@@ -1,13 +1,22 @@
 let attempts = 0; // Track the number of attempts
 
+// Define an array of acceptable answers
+const validAnswers = [
+    "rucosi figere atelier", // Full brand name in lowercase
+    "rucosi figere", // Shortened version (lowercase)
+    "figere", // Further shortened version
+    "rucosi", // Another variation
+    "atelier", // Related keyword
+];
+
 function checkPassword() {
-    var userInput = document.getElementById("password").value.toLowerCase();
-    var correctAnswer = "rucosi figere"; // Your brand name
+    var userInput = document.getElementById("password").value.toLowerCase(); // Normalize user input to lowercase
     var galleryPage = document.getElementById("gallery-page");
     var errorMessage = document.getElementById("error-message");
     var hintMessage = document.getElementById("hint-message");
 
-    if (userInput === correctAnswer) {
+    // Check if the user input matches any of the valid answers (case-insensitive)
+    if (validAnswers.some(answer => answer.toLowerCase() === userInput)) {
         // If the answer is correct, show the gallery page
         galleryPage.style.display = "block";
         document.querySelector(".landing-page").style.display = "none"; // Hide the password form
