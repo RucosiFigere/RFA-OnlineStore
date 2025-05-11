@@ -1,22 +1,58 @@
-/* styles.css */
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Apply Exo 2 font to the whole body */
+/* General Styles */
 body {
-  font-family: 'Exo 2', sans-serif;
+    font-family: 'EB Garamond', serif; /* Apply EB Garamond font */
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
 }
 
-/* Apply the same font to headers */
-h1, h2, h3 {
-  font-family: 'Exo 2', sans-serif;
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
-/* Custom styling for header and main content */
-header {
-  text-align: center;
-  padding: 20px;
+.riddle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-main {
-  font-size: 18px;
-  padding: 20px;
+.hint {
+    font-size: 1em;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.password-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Hidden Content - Initially Hidden */
+.hidden-content {
+    display: none;
 }
