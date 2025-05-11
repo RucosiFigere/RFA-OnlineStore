@@ -2,11 +2,15 @@ let attempts = 0; // Track the number of attempts
 
 // Define an array of acceptable answers
 const validAnswers = [
-    "rucosi figere atelier", // Full brand name in lowercase
-    "rucosi figere", // Shortened version (lowercase)
-    "figere", // Further shortened version
-    "rucosi", // Another variation
-    "atelier", // Related keyword
+    "rucosi figere atelier", // Full brand name
+    "rucosi figere",         // Shortened version
+    "figere atelier",        // Another variation
+    "rucosi",                // Just the first part
+    "atelier",               // Just the last part
+    "rfa",                   // Abbreviation for the brand
+    "figere",                // Just the middle part
+    "rucosi atelier",        // Another combination
+    "atelier rucosi"         // Another possible order
 ];
 
 function checkPassword() {
